@@ -1,0 +1,20 @@
+<!-- Write a JavaScript program to print the contents of the current window -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>current window</title>
+</head>
+<body>
+    <p>window.print(): The window object represents a window containing a DOM document;<br> the document property points to the DOM document loaded in that window, window.print() is used to open the Print Dialog to print the current document</p>
+    <p>Click the button to print contents of current page..</p>
+    <button onclick="show_content()"> Click here</button>
+    
+    <script>
+        function show_content(){
+            window.print();
+        }
+    </script>
+</body>
+</html>

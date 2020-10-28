@@ -1,0 +1,25 @@
+<!-- Write a JavaScript program to rotate the string 'JavaScriptTrainingModule' in right direction by periodically removing one letter from the end of the string and attaching it to the front. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate string</title>
+</head>
+<body>
+    <p id="len"></p>
+    <script>
+
+       var str="JavaScriptTrainingModule";
+
+       var lem= str.length;
+       var str1="";
+       str1=str1+str.charAt(str.length-1);
+       for(var i=0;i<str.length-1;i++)
+       {
+        str1=str1+str.charAt(i);
+       }
+       document.getElementById("len").innerHTML =str1;
+    </script>
+</body>
+</html>
