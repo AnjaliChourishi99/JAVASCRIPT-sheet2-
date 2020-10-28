@@ -9,11 +9,11 @@
 <body>
     <h2>Enter year : </h2>
     year<input type="number" id="year">
-    <button onclick="leapyear(2020)" id="ans">Year is leap year?</button>
+    <button onclick="leapyear()" id="ans">Year is leap year?</button>
     
     <script>
-        function leapyear(year){
-           // document.write(year);
+        function leapyear(){
+            var year = document.getElementById("year").value;
             var ans = (year %4==0)?(year % 100 == 0?((year % 400 == 0)? true:false):true):false;
             document.getElementById("ans").innerHTML=ans;
         }
